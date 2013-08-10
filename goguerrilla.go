@@ -307,7 +307,7 @@ func handleClient(client *Client) {
 				if len(input) > 10 {
 					client.mail_from = input[10:]
 				}
-				responseAdd(client, "250 Ok")
+				responseAdd(client, "250 OK")
 			case strings.Index(cmd, "XCLIENT") == 0:
 				// Nginx sends this
 				// XCLIENT ADDR=212.96.64.216 NAME=[UNAVAILABLE]
